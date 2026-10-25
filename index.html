@@ -3,55 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy policy for the Finn finance management app.">
     <title>Privacy Policy - Finn</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f7f9; }
-        .container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #2C3E82; border-bottom: 2px solid #2C3E82; padding-bottom: 10px; }
-        h2 { color: #2C3E82; margin-top: 30px; }
-        p { margin-bottom: 15px; }
-        ul { margin-bottom: 15px; }
-        .footer { margin-top: 50px; font-size: 0.9em; color: #777; text-align: center; }
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f9;
+        }
+
+        main {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: #2c3e82;
+            border-bottom: 2px solid #2c3e82;
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: #2c3e82;
+            margin-top: 32px;
+        }
+
+        p, ul {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #2c3e82;
+            overflow-wrap: anywhere;
+        }
+
+        code {
+            background: #f0f2f7;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            main {
+                padding: 24px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>Last updated: February 28, 2026</p>
-        <p>This privacy policy applies to the <strong>Finn</strong> mobile application (herein referred to as "Application") for mobile devices, created by <strong>Happy Deswal</strong> (herein referred to as "Service Provider") as a Commercial service.</p>
+<main>
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> October 25, 2026</p>
 
-        <h2>1. Information Collection and Use</h2>
-        <p>The Application collects information when you download and use it. This information may include:</p>
-        <ul>
-            <li>Your device's IP address.</li>
-            <li>Information you provide such as your name, country, and occupation (collected during onboarding).</li>
-            <li>Financial data: Expenses, income, and budget limits that you manually enter into the app.</li>
-            <li>Anonymous Device Identifiers: Used to manage AI chat limits and backend synchronization.</li>
-        </ul>
+    <p>
+        This privacy policy describes how <strong>Finn</strong>, a mobile
+        application provided by <strong>Happy Deswal</strong>, handles
+        information when you use its finance-management, automatic tracking,
+        AI and advertising features.
+    </p>
 
-        <h2>2. Third Party Access</h2>
-        <p>The Application uses third-party services that have their own Privacy Policies. Below are the links to the privacy policies of the third-party service providers used by the Application:</p>
-        <ul>
-            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
-            <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob</a></li>
-        </ul>
+    <h2>1. Information We Process</h2>
+    <ul>
+        <li>
+            <strong>Profile information:</strong>
+            Your name, country, occupation and currency provided during
+            onboarding.
+        </li>
+        <li>
+            <strong>Financial information:</strong>
+            Transaction amounts, titles or merchant names, categories, dates,
+            notes and budget limits you enter, or that are created through
+            optional automatic tracking.
+        </li>
+        <li>
+            <strong>Chat information:</strong>
+            Messages you send to Finn AI, responses and financial summaries
+            used to generate insights.
+        </li>
+        <li>
+            <strong>App-generated identifier:</strong>
+            Finn creates an identifier to associate backend registration
+            and daily AI usage limits with an app installation.
+            This identifier may be linked to your profile.
+        </li>
+        <li>
+            <strong>Network, advertising and diagnostic information:</strong>
+            The backend and service providers may process IP addresses,
+            device or advertising identifiers, app and advertising
+            interactions, and diagnostic information to operate services,
+            display or measure advertisements and help prevent misuse.
+        </li>
+    </ul>
 
-        <h2>3. Data Storage and Security</h2>
-        <p>Your financial data (expenses and budgets) is primarily stored locally on your device using an encrypted database. We take the security of your data seriously and implement industry-standard measures to protect the anonymous information sent to our AI backend.</p>
+    <h2>2. Optional SMS-Based Money Management</h2>
+    <p>
+        With your explicit consent and Android SMS permission, Finn processes
+        incoming bank debit and credit SMS alerts on your device, including
+        while the app is in the background, to automatically record and
+        categorize transactions and update your totals and budgets.
+    </p>
+    <p>
+        Finn requests <code>RECEIVE_SMS</code> for this feature. It does not
+        request permission to send SMS, read existing inbox history or
+        access call logs.
+    </p>
+    <p>
+        Incoming message text is parsed locally. The parser filters out OTPs,
+        failed or pending payments, and messages that are not recognized as
+        completed financial transaction alerts. Finn does not store or
+        upload the full SMS text through its automatic tracking feature.
+    </p>
+    <p>
+        Finn saves extracted transaction details and hashed message or
+        reference fingerprints to help prevent duplicate entries.
+        Saved transaction details may subsequently be included in financial
+        summaries used by Finn's AI features, as explained below.
+    </p>
+    <p>
+        SMS tracking is optional. You can continue adding transactions
+        manually, disable tracking in
+        <strong>Quick Actions &amp; Services → Auto tracking</strong>,
+        or revoke SMS permission in Android settings.
+        Disabling access stops new SMS imports but does not delete
+        previously saved transactions.
+    </p>
+    <p>
+        Automatically created entries may need correction and can be edited
+        or deleted. Finn does not access your bank account directly or
+        request your bank login credentials.
+    </p>
 
-        <h2>4. Financial Data Policy</h2>
-        <p>Finn is a financial management tool. We do not automatically scrape your bank accounts or SMS. All financial data is entered manually by the user. This data is used solely to provide you with financial insights and AI-powered advice through the "Finn AI" feature.</p>
+    <h2>3. Optional Notification Access</h2>
+    <p>
+        If you separately enable payment-notification tracking and grant
+        Android notification access, Finn can process newly posted
+        notifications from supported payment and messaging apps, including
+        Google Pay, PhonePe, Paytm and supported SMS apps.
+    </p>
+    <p>
+        Finn checks the source app before reading notification text and
+        ignores unsupported apps. It does not scan existing notification
+        history.
+    </p>
+    <p>
+        Recognized financial alerts are processed on your device in the
+        same way as SMS alerts. Full notification text is not stored or
+        uploaded by this tracking feature. Extracted transaction details
+        and duplicate-detection fingerprints may be saved locally.
+    </p>
+    <p>
+        You can disable this feature in Auto tracking or revoke notification
+        access in Android settings.
+    </p>
 
-        <h2>5. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+    <h2>4. How Information Is Used and Shared</h2>
+    <ul>
+        <li>
+            <strong>Finance tracking:</strong>
+            Locally saved transactions and budgets are used to calculate
+            balances, category totals, reports and budgeting information.
+        </li>
+        <li>
+            <strong>Backend registration:</strong>
+            Your profile details and app-generated identifier are sent to
+            Finn's backend to register the installation and support app
+            services. The backend can retain registration records and,
+            when configured, send registration details or user summaries
+            to the developer through email.
+        </li>
+        <li>
+            <strong>AI features:</strong>
+            Finn can send chat messages, your name, country and currency
+            information, app-generated identifier and financial summaries
+            to its backend. Financial summaries may include information
+            derived from automatically tracked transactions.
+            The backend can forward your prompt, financial context and
+            name to configured AI providers, such as Groq or Google Gemini,
+            to generate responses, reports or financial insights.
+            Some app insights can request these summaries automatically.
+            Raw SMS and payment-notification bodies are not included by
+            the tracking importer.
+        </li>
+        <li>
+            <strong>Advertising:</strong>
+            Google AdMob and related Google services process information
+            to deliver and measure advertising, diagnose service issues
+            and help prevent fraud. Finn does not use SMS or
+            payment-notification text to target advertising.
+        </li>
+    </ul>
+    <p>
+        AI processing is not entirely on-device. Information sent to
+        external providers is handled under the applicable service terms,
+        settings and data-processing arrangements.
+    </p>
+    <p>
+        Avoid entering bank passwords, PINs, OTPs or other unnecessary
+        sensitive information into chat messages or transaction notes.
+    </p>
 
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
-        <p><strong>Email:</strong> happydeswal01@gmail.com</p>
+    <h2>5. Third-Party Services</h2>
+    <p>
+        The services used depend on the feature and backend configuration.
+        Relevant provider privacy information and terms include:
+    </p>
+    <ul>
+        <li>
+            <a href="https://policies.google.com/privacy"
+               target="_blank" rel="noopener noreferrer">
+                Google Privacy Policy
+            </a>
+            — Google Play Services, Google advertising services and
+            developer email services.
+        </li>
+        <li>
+            <a href="https://support.google.com/admob/answer/6128543?hl=en"
+               target="_blank" rel="noopener noreferrer">
+                Google AdMob privacy information
+            </a>.
+        </li>
+        <li>
+            <a href="https://render.com/privacy"
+               target="_blank" rel="noopener noreferrer">
+                Render Privacy Policy
+            </a>
+            — backend hosting.
+        </li>
+        <li>
+            <a href="https://groq.com/privacy-policy"
+               target="_blank" rel="noopener noreferrer">
+                Groq Privacy Policy
+            </a>
+            and
+            <a href="https://console.groq.com/docs/legal/customer-data-processing-addendum"
+               target="_blank" rel="noopener noreferrer">
+                GroqCloud Data Processing Addendum
+            </a>
+            — configured AI processing.
+        </li>
+        <li>
+            <a href="https://ai.google.dev/gemini-api/terms"
+               target="_blank" rel="noopener noreferrer">
+                Google Gemini API terms
+            </a>
+            — configured AI processing.
+        </li>
+    </ul>
 
-        <div class="footer">
-            &copy; 2026 FinnApp. All rights reserved.
-        </div>
-    </div>
+    <h2>6. Data Storage and Security</h2>
+    <p>
+        Transactions, budgets, chat history and tracking fingerprints are
+        stored primarily in Finn's app-private storage on your device.
+        The transaction database does not currently use app-level database
+        encryption. Android's storage protections depend on your device
+        and its security settings.
+    </p>
+    <p>
+        Finn's configured backend connections use HTTPS.
+        Registration records are stored by the backend, and registration
+        emails, service logs and information sent to providers can exist
+        outside your device. No storage or transmission method can
+        guarantee absolute security.
+    </p>
+
+    <h2>7. Your Choices, Retention and Deletion</h2>
+    <p>
+        Local app records remain until you remove them using available app
+        controls, clear Finn's app storage in Android settings or uninstall
+        the app. You can edit transactions and delete automatically tracked
+        entries in Finn.
+    </p>
+    <p>
+        Exported reports or files saved outside the app must be removed
+        separately. Clearing app storage or uninstalling does not delete
+        backend records, developer emails or data already handled by
+        providers.
+    </p>
+    <p>
+        The current backend does not automatically expire registration
+        records. They may remain until removed by the developer or until
+        backend storage is reset. Provider-held records, logs and emails
+        may be retained according to their applicable terms and settings.
+        Finn does not currently provide an automatic in-app backend
+        deletion function.
+    </p>
+    <p>
+        You can contact
+        <a href="mailto:happydeswal01@gmail.com">happydeswal01@gmail.com</a>
+        to request access, correction or deletion of developer-held
+        information. Include enough information to identify your Finn
+        profile and describe your request. Do not send passwords, PINs,
+        OTPs or full bank messages.
+    </p>
+    <p>
+        You can independently revoke SMS permission and notification access
+        through Android settings. Turning off tracking does not
+        automatically erase earlier entries or information already shared
+        with backend services.
+    </p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+        This policy may be updated when Finn's features or
+        information-handling practices change. The latest version will be
+        posted on this page with an updated date.
+        Where additional consent is required for a new use of information,
+        that consent must be obtained before the new use begins.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+        For questions about Finn's privacy practices or requests concerning
+        your information, contact:
+    </p>
+    <p>
+        <strong>Happy Deswal</strong><br>
+        <strong>Email:</strong>
+        <a href="mailto:happydeswal01@gmail.com">happydeswal01@gmail.com</a>
+    </p>
+
+    <footer>
+        &copy; 2026 FinnApp. All rights reserved.
+    </footer>
+</main>
 </body>
 </html>
