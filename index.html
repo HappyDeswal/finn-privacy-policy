@@ -84,7 +84,7 @@
 <body>
 <main>
     <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> October 25, 2026</p>
+    <p><strong>Last updated:</strong> November 20, 2026</p>
 
     <p>
         This privacy policy describes how <strong>Finn</strong>, a mobile
@@ -132,11 +132,14 @@
         incoming bank debit and credit SMS alerts on your device, including
         while the app is in the background, to automatically record and
         categorize transactions and update your totals and budgets.
+        You do not need to open or mark a bank message as read for an
+        eligible incoming alert to be processed.
     </p>
     <p>
         Finn requests <code>RECEIVE_SMS</code> for this feature. It does not
         request permission to send SMS, read existing inbox history or
-        access call logs.
+        access call logs. Only new alerts received after you enable tracking
+        and grant the required permission are eligible for automatic import.
     </p>
     <p>
         Incoming message text is parsed locally. The parser filters out OTPs,
@@ -147,6 +150,7 @@
     <p>
         Finn saves extracted transaction details and hashed message or
         reference fingerprints to help prevent duplicate entries.
+        These fingerprints are used for duplicate detection, not advertising.
         Saved transaction details may subsequently be included in financial
         summaries used by Finn's AI features, as explained below.
     </p>
@@ -162,6 +166,14 @@
         Automatically created entries may need correction and can be edited
         or deleted. Finn does not access your bank account directly or
         request your bank login credentials.
+    </p>
+
+    <p>
+        Only recognized alerts in the currency selected in your Finn profile
+        are imported. Bank and payment-message formats vary; some alerts may
+        not be recognized or may be assigned an incorrect category. Review
+        imported entries and correct them or add a transaction manually when
+        needed. Finn balances reflect saved entries, not a live bank balance.
     </p>
 
     <h2>3. Optional Notification Access</h2>
@@ -302,7 +314,9 @@
         Local app records remain until you remove them using available app
         controls, clear Finn's app storage in Android settings or uninstall
         the app. You can edit transactions and delete automatically tracked
-        entries in Finn.
+        entries in Finn. Duplicate-detection fingerprints can remain in local
+        app storage after an individual transaction is deleted. Clear Finn's
+        app storage or uninstall the app to remove these local fingerprints.
     </p>
     <p>
         Exported reports or files saved outside the app must be removed
